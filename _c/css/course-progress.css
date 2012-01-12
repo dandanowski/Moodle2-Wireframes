@@ -1,0 +1,219 @@
+
+/** Side Block
+    -------------------------------------------------------------------------*/
+    
+.meter {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    xcursor: pointer;
+    }
+    
+.block_course-progress .content > .meter { position:absolute; top: -9999px; left: -9999px; }
+
+.meter .progress {
+    float: left;
+    height: 100%;
+    xwidth: 30%;
+    }
+    
+.meter .complete { background: #696 none; }
+.meter .incomplete { background: #966 none; }
+.meter .not-attempted { background: #999 none; }
+
+
+
+
+/** Overlay
+    -------------------------------------------------------------------------*/
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background: rgba(0,0,0,0.65) none;
+    }
+    
+#overlay .content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    background: #FFF none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.65);
+    }
+
+#overlay .content button.close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 99;
+    }
+    
+    
+    
+    
+/** Course Progress Detail
+    -------------------------------------------------------------------------*/
+
+.block_course-progress.small #cp-detail { display: none; }
+.block_course-progress.small .meter { cursor: pointer; }
+.block_course-progress.small .content > .meter { position: static; }
+
+#cp-detail {
+    position: relative;
+    height: 92%;
+    padding: 3%;
+    }
+    
+#cp-detail .wrap {
+    height: 100%;
+    }
+    
+    
+/** Header **/
+#page-content #cp-detail .cp-header {
+    padding: 0;
+    background-color: #FFF;
+    }
+    
+#cp-detail .cp-header h2 {
+    float: left;
+    font-size: 1.6923em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 30px;
+    }
+
+#cp-detail .cp-header .meter {
+    float: right;
+    width: 50%;
+    cursor: default;
+    }
+
+
+/** Filters **/
+#cp-detail .cp-header .filters {
+    clear: both;
+    padding-top: 20px;
+    }
+
+#cp-detail .cp-header ul.group {
+    float: left;
+    margin: 0;
+    }
+    
+#cp-detail .cp-header ul.group li {
+    float: left;
+    padding-right: 20px;
+    list-style: none;
+    cursor: pointer;
+    }
+    
+#cp-detail .cp-header ul.group li.active {
+    font-weight: bold;
+    }
+    
+    
+    
+/** Report **/
+#cp-detail .cp-report {
+    clear: both;
+    margin-top: 40px;
+    height: 78%;
+    line-height: 26px;
+    xborder: 1px dashed #999;
+    overflow: scroll;
+    }
+    
+.block_course-progress #cp-detail .cp-report {
+    height: auto;
+    overflow: visible;
+    }
+    
+#cp-detail .cp-report dl dl,
+#cp-detail .cp-report ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    }
+
+#cp-detail .cp-report dt,
+#cp-detail .cp-report li {
+    padding: 0 10px;
+    list-style: none;
+    border-top: 1px dotted #CCC;
+    }
+    
+#cp-detail .cp-report dl.group > dt {
+    text-transform: uppercase;
+    background: #CCC none;
+    border-top-color: #FFF;
+    }
+    
+#cp-detail .cp-report dl.group > dt span.count {
+    float: right;
+    width: 60px;
+    font-weight: bold;
+    text-align: center;
+    }
+    
+#cp-detail .cp-report dl.course > dt {
+    font-weight: bold;
+    background-color: #EEE;
+    border-top: 1px solid #999;
+    }
+    
+#cp-detail .cp-report dl dt.hover { background-color: #FFC; }
+#cp-detail .cp-report li.hover { background-color: #EEE; }
+
+#cp-detail .cp-report .meter {
+    position: relative;
+    float: right;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 3px;
+    overflow: hidden;
+    cursor: default;
+    border-radius: 5px;
+    }
+
+#cp-detail .cp-report dt .meter { width: 80px; }
+#cp-detail .cp-report dl.category > dt .meter { width: 120px; }
+    
+#cp-detail .cp-report .meter .level {
+    height: 100%;
+    background: #999 none;
+    }
+
+#cp-detail .cp-report .meter .passed,
+#cp-detail .cp-report .meter .failed {
+    text-align: right;
+    background: #999 url(../img/icon_passed.png) 10% 50% no-repeat;
+    }
+
+#cp-detail .cp-report .meter .failed {
+    background-image: url(../img/icon_failed.png);
+    }
+
+#cp-detail .cp-report .meter .level .grade {
+    padding-right: 6px;
+    }
+
+#cp-detail .show-more {
+    margin-left: 10px;
+    font-size: 0.7692em;
+    text-align: center;
+    text-transform: uppercase;
+    background: #EEE none;
+    cursor: pointer;
+    }

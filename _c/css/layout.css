@@ -1,0 +1,213 @@
+
+/** Standard
+------------------------------------------------------------------------------*/
+html {
+    background: #CCC none;
+    }
+    
+body {
+    padding: 0 10px;
+    line-height: 1.3846em;
+    font-family: verdana,sans-serif;
+    }
+    
+h1 {
+    padding-bottom: 1.3846em;
+    font-size: 1.6923em;
+    font-weight: bold;
+    }
+    
+h2 {
+    padding-bottom: 0.6923em;
+    font-size: 1.3846em;
+    font-weight: bold;
+    }
+
+p {
+    padding-bottom: 1.3846em;
+    }
+
+ul {
+    margin-left: 20px;
+    padding-bottom: 1.3846em;
+    }
+
+li {
+    padding-bottom: 6px;
+    list-style: disc outside none;
+    }
+
+
+/** Page
+------------------------------------------------------------------------------*/
+#page {
+    width: 98%;
+    min-width: 900px;
+    margin: 10px auto 40px auto;
+    background: #FFF none;
+    border-radius: 5px;
+    box-shadow: 
+        3px 3px 5px rgba(0,0,0,0.35),
+        0 0 20px rgba(0,0,0,0.3);
+    }
+
+
+
+/** Header
+------------------------------------------------------------------------------*/
+
+
+/** Meta **/
+#page-header .meta {
+    padding: 0 10px;
+    line-height: 30px;
+    }
+    
+#page-header .meta .title {
+    float: left;
+    font-weight: bold;
+    }
+    
+#page-header .meta .logininfo {
+    float: right;
+    }
+    
+
+/** Banner **/
+#page-header .banner {
+    clear: both;
+    background: transparent url(../img/dev_placeholder_right.png) top right repeat;
+    }
+
+#page-header .banner .inner {
+    height: 120px;
+    background: transparent url(../img/dev_placeholder_left.png) top left repeat;
+    }
+    
+   
+/** Main Nav **/
+#page-header .main-nav {
+    height: 30px;
+    line-height: 30px;
+    background: #CCC none;
+    }
+
+#page-header .main-nav li {
+    display: inline;
+    padding: 0 10px;
+    }
+    
+    
+/** Ticker **/
+#page-header .ticker {}
+    
+    
+/** Navbar **/
+#page-header .navbar {
+    margin-top: 10px;
+    padding: 0 10px;
+    line-height: 30px;
+    }
+    
+#page-header .navbar .breadcrumb {
+    float: left;
+    }
+
+#page-header .navbar .breadcrumb li {
+    display: inline;
+    }
+    
+#page-header .navbar .navbutton {
+    float: right;
+    }
+
+
+
+/** Content
+------------------------------------------------------------------------------*/
+#page-content {
+    margin-top: 20px;
+    padding: 0 10px;
+    }
+    
+#page-content #region-main-box {
+    float: left;
+    width: 80%;
+    }
+    
+#page-content #region-main {
+    float: right;
+    width: 70%;
+    padding: 0 2%;
+    }
+
+#page-content .block-region {
+    width: 20%;
+    min-height: 200px;
+    padding-bottom: 40px;
+    xbackground: transparent url(../img/dev_placeholder.png) center center repeat;
+    }
+
+#page-content #region-pre {
+    float: left;
+    width: 25%;
+    }
+
+#page-content #region-post {
+    float: right;
+    }
+
+
+
+/** Side Blocks
+------------------------------------------------------------------------------*/
+#page-content .block {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+
+#page-content .block .header {
+    padding: 5px;
+    background: #CCC none;
+    border-radius: 5px 5px 0 0;
+    }
+
+#page-content .block .header .title h2 {
+    font-size: 1.0em;
+    }
+    
+#page-content .block .header .title .block_action { 
+    xdisplay: none; 
+    float: right;
+    }
+    
+#page-content .block .header .title .block_action input {
+    display: none;
+    }
+
+#page-content .block .header .title h2 { font-weight: bold; }
+    
+#page-content .block .content {
+    padding: 10px 5px;
+    background: #FFF none;
+    border: 1px solid #CCC;
+    border-radius: 0 0 5px 5px;
+    }
+
+
+/** Footer
+------------------------------------------------------------------------------*/
+#page-footer {
+    margin-top: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #CCC;
+    }
+
+
+
+/** Miscellaneous
+------------------------------------------------------------------------------*/
+.vc { clear: both; }
+.hide { display: none; }
